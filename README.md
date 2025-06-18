@@ -6,13 +6,12 @@ This conceptually terse project demonstrates:
 - Delayed Operations
 - Multi-file project structure
 
-lscdelay/
-|- processor.h
-|- processor.cpp
-|- delay_op.h
-|- delay_op.cpp
-|- inventory.h
-|- inventory.cpp
-|- main.cpp
-|- Makefile
-
+LscDelay/
+- processor.h
+- processor.cpp
+- delay_op.h
+- delay_op.cpp
+- inventory.h
+- inventory.cpp
+- main.cpp
+- Makefile
