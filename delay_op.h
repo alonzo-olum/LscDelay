@@ -22,3 +22,5 @@ public:
 	void shutdown();
 	size_t pending_tasks() const;
 };
+
+#endif
