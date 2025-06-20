@@ -7,11 +7,13 @@ This conceptually terse project demonstrates:
 - Multi-file project structure
 
 LscDelay/
-- processor.h
-- processor.cpp
-- delay_op.h
-- delay_op.cpp
-- inventory.h
-- inventory.cpp
-- main.cpp
+- include/
+    - processor.h
+    - delay_op.h
+    - inventory.h
+- src/
+    - processor.cpp
+    - delay_op.cpp
+    - inventory.cpp
+    - main.cpp
 - Makefile
