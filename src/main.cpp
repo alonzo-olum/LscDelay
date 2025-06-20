@@ -12,7 +12,7 @@ void demo_delay_op() {
 	DelayedExecutor executor;
 
 	for (int i = 0; i < 5; ++i) {
-		executor.add_task([]() {
+		executor.add_task([i]() {
 				cout << "delay task " << i << endl;
 				}, 1000 * (i + 1));
 	}

@@ -1,5 +1,7 @@
+#include <sstream>
+#include <iostream>
+
 #include "inventory.h"
-#inventory <stream>
 
 using namespace std;
 
@@ -22,13 +24,13 @@ string DigitalItem::get_description() const {
 
 Inventory::~Inventory() {
 	for (auto& pair : items) {
-		delete pair.second;
+		delete pair;
 	}
 }
 
 void Inventory::add_item(Item* item, const string& category) {
-	item[item->get_id()] = item;
-	categories.insert(categories);
+	items[item->get_id()] = item;
+	categories.insert(category);
 	log_action("Added Item: " + item->get_id());
 }
 
@@ -43,7 +45,7 @@ void Inventory::remove_item(const string& id) {
 
 Item* Inventory::find_item(const string& id) const {
 	auto item = items.find(id);
-	return item != items.end() ? it->second : nullptr;
+	return item != items.end() ? item : nullptr;
 }
 
 void Inventory::add_category(const string& category) {
