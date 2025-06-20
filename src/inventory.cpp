@@ -14,7 +14,8 @@ string Item::get_description() const {
 	return oss.str();
 }
 
-DigitalItem::DigitalItem(const string& id, const string& name, double price, const string& license): Item(id, name, price), license_key(license) {}
+DigitalItem::DigitalItem(const string& id, const string& name, double price, const string& license):
+	Item(id, name, price), license_key(license) {}
 
 string DigitalItem::get_description() const {
 	ostringstream oss;
